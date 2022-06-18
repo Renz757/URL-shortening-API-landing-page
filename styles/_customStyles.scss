@@ -1,0 +1,169 @@
+.hamburger {
+    cursor: pointer;
+    color: $gray;
+}
+
+.main {
+    .header-img-container {
+        position: relative;
+        overflow: hidden;
+    
+        .header-img {
+            position: inherit;
+            left: 100px;
+        }
+    }
+
+    .content {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: $very-dark-violet;
+        }
+
+    }
+}
+
+.API {  
+    width: 85%;
+    margin: -50px auto 0 auto;
+    text-align: center;
+    
+    .API-Box {
+        padding: 30px;
+        background-image: url('../images/bg-shorten-mobile.svg');
+        background-size: 80%;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-color: $dark-violet;
+        position: relative;
+        top: 140px;
+
+        input, button {
+           padding: 12px 20px;
+           margin: 5px;
+           border: none;
+        }
+
+        button {
+            background-color: $btn-color;
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+.info-container {
+    background-color: #eef1f6 ;
+
+    .info {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 100px;
+        text-align: center;
+
+        .info-header {
+            margin-bottom: 30px;
+        }
+
+        .box {  
+            background-color: white;
+            border-radius: 2%;
+            text-align: center;
+            position: relative;
+            margin-top: 100px;
+            justify-content: center;
+    
+            .circle {
+                margin: 0 auto;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: $dark-violet;
+                position: absolute;
+                top: -40px;
+                left: 40%;          
+    
+                .circle-img {
+                    position: relative;
+                    // right: 25%;
+                    top: 25%;
+                    width: 50%;
+                    height: 50%;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .info:last-child {
+        padding-bottom: 70px;
+    }
+}
+
+.boost-link-container {
+    background-color: $dark-violet;
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+
+    div {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+
+        h3 {
+            color: white;
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+footer {
+    background-color: $very-dark-violet;
+    color: white;
+    text-align: center;
+
+    .logo-header {
+        padding-top: 40px;
+        margin-bottom: 40px;
+        .logo {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bolder;
+        }
+    }
+
+    .links {
+        h4 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            li {
+                margin-bottom: 10px;
+                color: $gray;
+            }
+        }
+    }
+
+    .social-links {
+        margin-top: 30px;
+        padding-bottom: 50px;
+
+        ul {
+            li {
+                padding: 10px;
+            }
+        }
+    }  
+}

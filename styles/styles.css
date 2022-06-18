@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+html, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.global-btn {
+  padding: 8px 27px;
+  border: none;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+}
+
+.sub-header {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: hsl(260deg, 8%, 14%);
+}
+
+.text {
+  color: hsl(0deg, 0%, 75%);
+  line-height: 23px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 75%);
+}
+
+.main .header-img-container {
+  position: relative;
+  overflow: hidden;
+}
+.main .header-img-container .header-img {
+  position: inherit;
+  left: 100px;
+}
+.main .content {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.main .content h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: hsl(260deg, 8%, 14%);
+}
+
+.API {
+  width: 85%;
+  margin: -50px auto 0 auto;
+  text-align: center;
+}
+.API .API-Box {
+  padding: 30px;
+  background-image: url("../images/bg-shorten-mobile.svg");
+  background-size: 80%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: hsl(257deg, 27%, 26%);
+  position: relative;
+  top: 140px;
+}
+.API .API-Box input, .API .API-Box button {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+}
+.API .API-Box button {
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.info-container {
+  background-color: #eef1f6;
+}
+.info-container .info {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.info-container .info .info-header {
+  margin-bottom: 30px;
+}
+.info-container .info .box {
+  background-color: white;
+  border-radius: 2%;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  justify-content: center;
+}
+.info-container .info .box .circle {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: hsl(257deg, 27%, 26%);
+  position: absolute;
+  top: -40px;
+  left: 40%;
+}
+.info-container .info .box .circle .circle-img {
+  position: relative;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.info-container .info:last-child {
+  padding-bottom: 70px;
+}
+
+.boost-link-container {
+  background-color: hsl(257deg, 27%, 26%);
+  background-image: url("../images/bg-boost-mobile.svg");
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+.boost-link-container div {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.boost-link-container div h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+footer {
+  background-color: hsl(260deg, 8%, 14%);
+  color: white;
+  text-align: center;
+}
+footer .logo-header {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+footer .logo-header .logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+footer .links h4 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+footer .links ul li {
+  margin-bottom: 10px;
+  color: hsl(0deg, 0%, 75%);
+}
+footer .social-links {
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+footer .social-links ul li {
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */

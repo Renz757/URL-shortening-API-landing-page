@@ -1,0 +1,35 @@
+html, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $text-font;
+}
+
+.global-btn {
+    padding: 8px 27px;
+    border: none;
+    background-color: $btn-color;
+    color: white;
+}
+
+.sub-header {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: $very-dark-violet;
+}
+
+.text {
+    color: $gray;
+    line-height: 23px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
