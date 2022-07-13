@@ -40,31 +40,44 @@ li {
   color: hsl(0deg, 0%, 75%);
 }
 
+.link-nav {
+  margin-right: 15px;
+  color: hsl(0deg, 0%, 75%);
+}
+
+.link-nav:first-child {
+  margin-left: 25px;
+}
+
+.login {
+  color: hsl(0deg, 0%, 75%);
+  margin-right: 15px;
+}
+
 .main .header-img-container {
   position: relative;
   overflow: hidden;
 }
 .main .header-img-container .header-img {
-  position: inherit;
+  position: relative;
   left: 100px;
 }
 .main .content {
-  width: 85%;
   margin: 0 auto;
   text-align: center;
 }
 .main .content h1 {
-  font-size: 2.3rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  color: hsl(260deg, 8%, 14%);
+  color: hsl(255deg, 11%, 22%);
 }
 
-.API {
+.API-section .API {
   width: 85%;
   margin: -50px auto 0 auto;
   text-align: center;
 }
-.API .API-Box {
+.API-section .API .API-Box {
   padding: 30px;
   background-image: url("../images/bg-shorten-mobile.svg");
   background-size: 80%;
@@ -74,23 +87,40 @@ li {
   position: relative;
   top: 140px;
 }
-.API .API-Box input, .API .API-Box button {
+.API-section .API .API-Box input,
+.API-section .API .API-Box button {
   padding: 12px 20px;
   margin: 5px;
   border: none;
 }
-.API .API-Box button {
+.API-section .API .API-Box button {
   background-color: hsl(180deg, 66%, 49%);
   color: white;
   font-size: 1.2rem;
+}
+.API-section #shortLinkList {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: 200px;
+}
+.API-section #shortLinkList li {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  padding: 15px;
+}
+.API-section #shortLinkList li p {
+  align-self: center;
+  margin: 0;
 }
 
 .info-container {
   background-color: #eef1f6;
 }
 .info-container .info {
-  width: 90%;
-  margin: 0 auto;
   padding-top: 100px;
   text-align: center;
 }
@@ -103,7 +133,6 @@ li {
   text-align: center;
   position: relative;
   margin-top: 100px;
-  justify-content: center;
 }
 .info-container .info .box .circle {
   margin: 0 auto;
@@ -149,6 +178,7 @@ footer {
   background-color: hsl(260deg, 8%, 14%);
   color: white;
   text-align: center;
+  padding: 80px;
 }
 footer .logo-header {
   padding-top: 40px;
