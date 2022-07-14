@@ -6,11 +6,19 @@ html, * {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .global-btn {
   padding: 8px 27px;
   border: none;
   background-color: hsl(180deg, 66%, 49%);
   color: white;
+}
+
+.global-btn:hover {
+  opacity: 0.5;
 }
 
 .sub-header {
@@ -43,6 +51,11 @@ li {
 .link-nav {
   margin-right: 15px;
   color: hsl(0deg, 0%, 75%);
+  cursor: pointer;
+}
+
+.link-nav:hover {
+  color: black;
 }
 
 .link-nav:first-child {
@@ -52,29 +65,30 @@ li {
 .login {
   color: hsl(0deg, 0%, 75%);
   margin-right: 15px;
+  cursor: pointer;
 }
 
-.main .header-img-container {
-  position: relative;
-  overflow: hidden;
+.main {
+  padding: 0;
 }
-.main .header-img-container .header-img {
+.main .header-img {
   position: relative;
   left: 100px;
-}
-.main .content {
-  margin: 0 auto;
-  text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 .main .content h1 {
   font-size: 3.6rem;
   font-weight: 700;
   color: hsl(255deg, 11%, 22%);
 }
+.main .content button {
+  width: 30%;
+}
 
 .API-section .API {
   width: 85%;
-  margin: -50px auto 0 auto;
+  margin: -45px auto 0 auto;
   text-align: center;
 }
 .API-section .API .API-Box {
@@ -85,7 +99,7 @@ li {
   background-repeat: no-repeat;
   background-color: hsl(257deg, 27%, 26%);
   position: relative;
-  top: 140px;
+  top: 125px;
 }
 .API-section .API .API-Box input,
 .API-section .API .API-Box button {
@@ -119,41 +133,41 @@ li {
 
 .info-container {
   background-color: #eef1f6;
+  padding-bottom: 100px;
 }
 .info-container .info {
-  padding-top: 100px;
-  text-align: center;
+  margin-top: 50px;
+  padding-top: 125px;
 }
 .info-container .info .info-header {
   margin-bottom: 30px;
+  min-width: 50%;
+  margin: 0 auto 50px auto;
+}
+.info-container .info .box-container {
+  min-height: 400px;
 }
 .info-container .info .box {
   background-color: white;
-  border-radius: 2%;
-  text-align: center;
-  position: relative;
-  margin-top: 100px;
-}
-.info-container .info .box .circle {
+  width: 85%;
+  height: auto;
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: hsl(257deg, 27%, 26%);
-  position: absolute;
-  top: -40px;
-  left: 40%;
 }
-.info-container .info .box .circle .circle-img {
+.info-container .info .circle {
   position: relative;
-  top: 25%;
-  width: 50%;
-  height: 50%;
-  display: inline-block;
-  vertical-align: middle;
+  top: -20px;
 }
-.info-container .info:last-child {
-  padding-bottom: 70px;
+.info-container .info .circle .circle-img {
+  background-color: hsl(257deg, 27%, 26%);
+  padding: 10px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.info-container .info .line {
+  height: 10px;
+  width: 10px;
+  background-color: hsl(180deg, 66%, 49%);
 }
 
 .boost-link-container {
@@ -197,6 +211,10 @@ footer .links h4 {
 footer .links ul li {
   margin-bottom: 10px;
   color: hsl(0deg, 0%, 75%);
+  cursor: pointer;
+}
+footer .links ul li:hover {
+  color: hsl(180deg, 66%, 49%);
 }
 footer .social-links {
   margin-top: 30px;
@@ -204,4 +222,12 @@ footer .social-links {
 }
 footer .social-links ul li {
   padding: 10px;
+  cursor: pointer;
+  color: hsl(180deg, 66%, 49%);
+}
+footer .social-links ul li .social-icon {
+  fill: white;
+}
+footer .social-links ul li .social-iconhover {
+  fill: hsl(180deg, 66%, 49%);
 }/*# sourceMappingURL=styles.css.map */

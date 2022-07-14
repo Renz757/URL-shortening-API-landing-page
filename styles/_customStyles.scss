@@ -6,6 +6,11 @@
 .link-nav {
     margin-right: 15px;
     color: $gray;
+    cursor: pointer;
+}
+
+.link-nav:hover {
+    color: black;
 }
 
 .link-nav:first-child {
@@ -15,27 +20,35 @@
 .login {
     color: $gray;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .main {
-    .header-img-container {
-        position: relative;
-        overflow: hidden;
+    padding: 0;
 
-        .header-img {
-            position: relative;
-            left: 100px;
-        }
+    
+    .header-img {
+        position: relative;
+        left: 100px;
+        max-width: 100%;
+        height: auto;
     }
 
+
     .content {
-        margin: 0 auto;
-        text-align: center;
+        
 
         h1 {
             font-size: 3.6rem;
             font-weight: 700;
             color: $very-dark-blue;
+            
+        }
+
+       
+
+        button {
+            width: 30%;
         }
 
     }
@@ -45,7 +58,7 @@
 
     .API {
         width: 85%;
-        margin: -50px auto 0 auto;
+        margin: -45px auto 0 auto;
         text-align: center;
 
         .API-Box {
@@ -56,7 +69,7 @@
             background-repeat: no-repeat;
             background-color: $dark-violet;
             position: relative;
-            top: 140px;
+            top: 125px;
 
             input,
             button {
@@ -99,50 +112,55 @@
 
 .info-container {
     background-color: #eef1f6;
+    padding-bottom: 100px;
 
     .info {
-        // margin: 0 auto;
-        padding-top: 100px;
-        text-align: center;
+        margin-top: 50px;
+        padding-top: 125px;
 
         .info-header {
             margin-bottom: 30px;
+            min-width: 50%;
+            margin: 0 auto 50px auto;
+        }
+
+    
+        .box-container {
+            min-height: 400px;
         }
 
         .box {
             background-color: white;
-            border-radius: 2%;
-            text-align: center;
+            width: 85%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .circle {
             position: relative;
-            margin-top: 100px;
+            top: -20px;
 
-
-            .circle {
-                margin: 0 auto;
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
+            .circle-img {
                 background-color: $dark-violet;
-                position: absolute;
-                top: -40px;
-                left: 40%;
-
-                .circle-img {
-                    position: relative;
-                    // right: 25%;
-                    top: 25%;
-                    width: 50%;
-                    height: 50%;
-                    display: inline-block;
-                    vertical-align: middle;
-                }
+                padding: 10px;
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
             }
         }
+
+        .line {
+            height: 10px;
+            width: 10px;
+            background-color: $btn-color;
+        }
+
+
+        
+        
+        
     }
 
-    .info:last-child {
-        padding-bottom: 70px;
-    }
 }
 
 .boost-link-container {
@@ -193,9 +211,15 @@ footer {
             li {
                 margin-bottom: 10px;
                 color: $gray;
+                cursor: pointer;
+            }
+
+            li:hover {
+                color: $btn-color;
             }
         }
     }
+
 
     .social-links {
         margin-top: 30px;
@@ -204,7 +228,17 @@ footer {
         ul {
             li {
                 padding: 10px;
+                cursor: pointer;
+                color: $btn-color;
+
+                .social-icon {
+                    fill: white;
+                }
+
+                .social-iconhover {
+                    fill: $btn-color;
+                }
             }
         }
-    }
+    }   
 }

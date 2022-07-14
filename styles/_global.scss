@@ -5,11 +5,19 @@ html, * {
     font-family: $text-font;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .global-btn {
     padding: 8px 27px;
     border: none;
     background-color: $btn-color;
     color: white;
+}
+
+.global-btn:hover {
+    opacity: .5;
 }
 
 .sub-header {

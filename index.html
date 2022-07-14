@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <nav class="container p-5">
+    <nav class="container p-5 mb-5">
       <div class="row align-items-center ms-auto">
         <div class="col-8">
           <div class="d-flex align-items-center">
@@ -33,7 +33,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 text-end">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -57,30 +57,33 @@
       </div>
     </nav>
 
-    <section class="main container">
+    <section class="main">
       <div class="row">
-        <div class="header-img-container col-12 col-md-6 order-md-1">
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-12 col-md-5 order-md-1">
           <img
-            class="img-fluid header-img"
+            class="header-img"
             src="images/illustration-working.svg"
             alt=""
           />
         </div>
-        <div class="content mt-5 col-12 col-md-6">
-          <h1>More than just shorter links</h1>
+        <div class="content mt-5 col-12 col-md-6 text-center text-md-start">
+          <h1 class="">More than just shorter links</h1>
           <p class="text">
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </p>
-          <button class="rounded-pill global-btn mt-3 w-50">Get Started</button>
+          <button class="rounded-pill global-btn mt-3">Get Started</button>
         </div>
       </div>
     </section>
 
     <section class="API-section container-fluid">
       <div class="API">
-        <div class="API-Box d-flex flex-column rounded container">
-          <input class="rounded" id="api-input" type="text" placeholder="Shorten a link here...">
+        <div class="API-Box d-flex flex-column flex-md-row rounded container">
+          <input class="rounded flex-md-grow-1" id="api-input" type="text" placeholder="Shorten a link here...">
           <button class="rounded" id="api-button">Shorten It!</button>
         </div>
 
@@ -91,10 +94,10 @@
       </div>
     </section>
 
-    <section class="info-container mt-5 container-fluid">
+    <section class="info-container container-fluid">
       <div class="info">      
         <div class="row">
-          <div class="col-12 info-header pt-5 col-6">
+          <div class="col-12 info-header pt-5 text-center">
             <h2 class="sub-header">Advanced Statistics</h2>
             <p class="text">
               Track how your links are performing across the web with our advanced
@@ -103,58 +106,65 @@
           </div>
         </div>
 
-         <div class="container-fluid">
-           <div class="container">
-             <div class="row ">
+         
+       
+        <div class="container box-container d-flex flex-column flex-md-row align-items-center">
 
-              <div class="col-12 col-md-4 box p-2 align-self-end">
-                <div class="circle">
-                  <img
-                    class="circle-img"
-                    src="images/icon-brand-recognition.svg"
-                    alt="icon-brand-recognition"
-                  />
-                </div>
-                <h3 class="sub-header pt-5">Brand Recognition</h3>
-                <p class="text mt-4 p-4">
-                  Boost your brand recognition with each click. Generic links don’t
-                  mean a thing. Branded links help instil confidence in your content.
-                </p>
-              </div>
-              
-              <div class="col-12 col-md-4 col-md-4 box p-2">
-                <div class="circle">
-                  <img
-                    class="circle-img"
-                    src="images/icon-detailed-records.svg"
-                    alt="icon-detailed-records"
-                  />
-                </div>
-                <h3 class="sub-header pt-5">Detailed Records</h3>
-                <p class="text mt-4 p-4">
-                  Gain insights into who is clicking your links. Knowing when and where
-                  people engage with your content helps inform better decisions.
-                </p>
-              </div>
-
-              <div class="col-12 col-md-4 box p-2">
-                <div class="circle">
-                  <img
-                    class="circle-img"
-                    src="images/icon-fully-customizable.svg"
-                    alt="icon-brand-recognition"
-                  />
-                </div>
-                <h3 class="sub-header pt-5">Fully Customizable</h3>
-                <p class="text mt-4 p-4">
-                  Improve brand awareness and content discoverability through customizable
-                  links, supercharging audience engagement.
-                </p>
-              </div>
-
+          <div class="text-center box align-self-md-start">
+            <div class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4">
+              <img
+                class="circle-img"
+                src="images/icon-brand-recognition.svg"
+                alt="icon-brand-recognition"
+              />
             </div>
-           </div>
-         </div>
+            <h3 class="sub-header pt-5">Brand Recognition</h3>
+            <p class="text mt-4 p-4">
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.
+            </p>
+          </div>
+
+          <div class="line py-4 py-md-0 px-0 px-md-3">
+      
+          </div>
+          
+          <div class="text-center box">
+            <div class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4">
+              <img
+                class="circle-img"
+                src="images/icon-detailed-records.svg"
+                alt="icon-detailed-records"
+              />
+            </div>
+            <h3 class="sub-header pt-5">Detailed Records</h3>
+            <p class="text mt-4 p-4">
+              Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.
+            </p>
+          </div>
+
+          <div class="line py-4 py-md-0 px-0 px-md-3">
+      
+          </div>
+
+          <div class="text-center box align-self-md-end">
+            <div class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4">
+              <img
+                class="circle-img"
+                src="images/icon-fully-customizable.svg"
+                alt="icon-brand-recognition"
+              />
+            </div>
+            <h3 class="sub-header pt-5">Fully Customizable</h3>
+            <p class="text mt-4 p-4">
+              Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+        
+       
 
       </div>
     </section>
@@ -162,7 +172,7 @@
     <section class="boost-link-container d-flex align-items-center">
       <div>
         <h3>Boost your links today</h3>
-        <button class="rounded-pill global-btn mt-3 w-25">Get Started</button>
+        <button class="rounded-pill global-btn mt-3">Get Started</button>
       </div>
     </section>
 
