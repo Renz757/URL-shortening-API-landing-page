@@ -5,7 +5,7 @@ const shortLinkList = document.querySelector("#shortLinkList");
 
 
 
-const generateLink = () => {
+const generateLink = async () => {
     // var valid = /^(ftp|http|https):\/\/[^ "]+$/.test(url);
     // console.log(valid);
 
@@ -14,22 +14,24 @@ const generateLink = () => {
         console.error("Please Enter Valid Url");
     } else {
         url.style.border = "none";
-        fetch(`https://api.shrtco.de/v2/shorten?url=${url.value}`)
-            .then(response => response.json())
-            .then(data => console.log(data.result));
+        const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url.value}`)
+        const data = await res.json();
 
-        url.value = "";
+        const shortLink = document.createElement('li');
+        shortLink.classList = "d-flex flex-column flex-md-row justify-content-between rounded container";
+        shortLink.innerHTML = `
+        <div>
+            <p class="text-start">${url.value}</p>  
+        </div>
+        <div class="d-flex flex-column flex-md-row rounded container p-0">
+            <p class="text-start">${data.result.short_link}</p>
+            <button class="button rounded p-2">Hello</button>
+        </div>
+         `;
+        shortLinkList.appendChild(shortLink);
+
+        url.value = " ";
     }
-
-
-
-    //set input to empty string 
-
-    //create element for short link
-    // const shortLink = document.createElement('li');
-    // shortLink.innerHTML = `<p>${url.value}</p>  <p>${data.result.short_link}</p> `;
-    // shortLinkList.appendChild(shortLink);
-    // url.value = "";
 };
 
 button.addEventListener('click', generateLink);

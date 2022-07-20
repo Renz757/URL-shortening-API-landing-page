@@ -24,9 +24,9 @@
 }
 
 .main {
-    padding: 0;
+    padding-bottom: 80px;
 
-    
+
     .header-img {
         position: relative;
         left: 100px;
@@ -36,16 +36,15 @@
 
 
     .content {
-        
 
         h1 {
             font-size: 3.6rem;
             font-weight: 700;
             color: $very-dark-blue;
-            
+
         }
 
-       
+
 
         button {
             width: 30%;
@@ -58,7 +57,11 @@
 
     .API {
         width: 85%;
-        margin: -45px auto 0 auto;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
         text-align: center;
 
         .API-Box {
@@ -68,8 +71,7 @@
             background-position: top right;
             background-repeat: no-repeat;
             background-color: $dark-violet;
-            position: relative;
-            top: 125px;
+            
 
             input,
             button {
@@ -89,22 +91,25 @@
     #shortLinkList {
         margin: 0 auto;
         position: relative;
-        z-index: 1;
-        top: 200px;
-
+        
 
         li {
             background-color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-self: center;
-            padding: 15px;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: space-between;
+            // align-self: center;
+            margin-top: 15px;
+            padding: 20px;
+            margin-bottom: 50px;
 
-            p {
-                align-self: center;
-                margin: 0;
-            }
+        }
+
+        .button {
+            background-color: $btn-color;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
         }
     }
 
@@ -113,9 +118,11 @@
 .info-container {
     background-color: #eef1f6;
     padding-bottom: 100px;
+    // padding-top: -50px;
+    height: auto;
 
     .info {
-        margin-top: 50px;
+        margin-top: 58px;
         padding-top: 125px;
 
         .info-header {
@@ -124,7 +131,7 @@
             margin: 0 auto 50px auto;
         }
 
-    
+
         .box-container {
             min-height: 400px;
         }
@@ -156,9 +163,9 @@
         }
 
 
-        
-        
-        
+
+
+
     }
 
 }
@@ -240,5 +247,5 @@ footer {
                 }
             }
         }
-    }   
+    }
 }
