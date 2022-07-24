@@ -82,63 +82,56 @@ li {
   font-weight: 700;
   color: hsl(255deg, 11%, 22%);
 }
-.main .content button {
-  width: 30%;
-}
-
-.API-section .API {
-  width: 85%;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-.API-section .API .API-Box {
-  padding: 30px;
-  background-image: url("../images/bg-shorten-mobile.svg");
-  background-size: 80%;
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-color: hsl(257deg, 27%, 26%);
-}
-.API-section .API .API-Box input,
-.API-section .API .API-Box button {
-  padding: 12px 20px;
-  margin: 5px;
-  border: none;
-}
-.API-section .API .API-Box button {
-  background-color: hsl(180deg, 66%, 49%);
-  color: white;
-  font-size: 1.2rem;
-}
-.API-section #shortLinkList {
-  margin: 0 auto;
-  position: relative;
-}
-.API-section #shortLinkList li {
-  background-color: white;
-  margin-top: 15px;
-  padding: 20px;
-  margin-bottom: 50px;
-}
-.API-section #shortLinkList .button {
-  background-color: hsl(180deg, 66%, 49%);
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-}
 
 .info-container {
   background-color: #eef1f6;
   padding-bottom: 100px;
   height: auto;
 }
-.info-container .info {
-  margin-top: 58px;
-  padding-top: 125px;
+.info-container .API-section .API {
+  width: 85%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: -50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.info-container .API-section .API .API-Box {
+  padding: 30px;
+  margin-top: 40px;
+  background-image: url("../images/bg-shorten-mobile.svg");
+  background-size: 80%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: hsl(257deg, 27%, 26%);
+}
+.info-container .API-section .API .API-Box input,
+.info-container .API-section .API .API-Box button {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+}
+.info-container .API-section .API .API-Box button {
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+}
+.info-container .API-section #shortLinkList {
+  margin: 0 auto;
+}
+.info-container .API-section #shortLinkList li {
+  background-color: white;
+  margin-top: 15px;
+  padding: 15px;
+}
+.info-container .API-section #shortLinkList .link-color {
+  color: hsl(180deg, 66%, 49%);
+}
+.info-container .API-section #shortLinkList .button {
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+  border: none;
 }
 .info-container .info .info-header {
   margin-bottom: 30px;

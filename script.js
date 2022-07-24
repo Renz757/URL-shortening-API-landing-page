@@ -2,6 +2,24 @@ const button = document.querySelector("#api-button");
 const url = document.querySelector("#api-input");
 const shortLinkList = document.querySelector("#shortLinkList");
 
+button.addEventListener('click', async () => {
+    let newLink = await generateLink();
+    
+    const shortLink = document.createElement('li');
+    shortLink.classList = "d-flex flex-column flex-md-row justify-content-md-between align-items-md-center rounded";
+    shortLink.innerHTML = `
+    <div class="text-start">
+        <p class="m-0">${url.value}</p>  
+    </div>
+    <span class="border-bottom mt-2"></span>
+    <div class="d-flex flex-column flex-md-row rounded p-0 align-items-md-center">
+        <p class="text-start mt-2 link-color">${newLink}</p>
+        <button class="copyButton button rounded p-2 my-1 my-md-0 mx-md-4">Copy</button>
+    </div>
+     `;
+    shortLinkList.appendChild(shortLink);
+    url.value = " ";
+});
 
 
 
@@ -17,21 +35,23 @@ const generateLink = async () => {
         const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url.value}`)
         const data = await res.json();
 
-        const shortLink = document.createElement('li');
-        shortLink.classList = "d-flex flex-column flex-md-row justify-content-between rounded container";
-        shortLink.innerHTML = `
-        <div>
-            <p class="text-start">${url.value}</p>  
-        </div>
-        <div class="d-flex flex-column flex-md-row rounded container p-0">
-            <p class="text-start">${data.result.short_link}</p>
-            <button class="button rounded p-2">Hello</button>
-        </div>
-         `;
-        shortLinkList.appendChild(shortLink);
+        console.log(data.result.short_link)
 
-        url.value = " ";
+        return data.result.short_link;
+
     }
 };
 
-button.addEventListener('click', generateLink);
+const copyText = () => {
+    // /* Select the text field */
+    // copyText.select();
+    // copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    //  /* Copy the text inside the text field */
+    // navigator.clipboard.writeText(copyText.value);
+
+    // /* Alert the copied text */
+    // alert("Copied the text: " + copyText.value);
+}
+
+
