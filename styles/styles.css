@@ -133,6 +133,11 @@ li {
   color: white;
   border: none;
 }
+.info-container .API-section #shortLinkList .copied {
+  background-color: hsl(257deg, 27%, 26%);
+  color: white;
+  border: none;
+}
 .info-container .info .info-header {
   margin-bottom: 30px;
   min-width: 50%;

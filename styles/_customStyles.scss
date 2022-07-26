@@ -111,7 +111,12 @@
                 background-color: $btn-color;
                 color: white;
                 border: none;
-               
+            }
+
+            .copied {
+                background-color: $dark-violet;
+                color: white;
+                border: none;
             }
 
         }
