@@ -23,6 +23,35 @@
     cursor: pointer;
 }
 
+.mobileNav {
+    background-color: $dark-violet;
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    // top: -50px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 75%;
+    height: 42vh;
+    margin: 0 auto;
+    border-radius: 3%;
+    .line {
+        height: 2px;
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid grey;
+    }
+
+    button {
+        width: 70%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
 .main {
     padding-bottom: 80px;
 
@@ -107,7 +136,7 @@
                 color: $btn-color;
             }
             
-            .button {
+            .buttonStyle {
                 background-color: $btn-color;
                 color: white;
                 border: none;

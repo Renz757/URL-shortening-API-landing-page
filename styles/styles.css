@@ -68,6 +68,33 @@ li {
   cursor: pointer;
 }
 
+.mobileNav {
+  background-color: hsl(257deg, 27%, 26%);
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 75%;
+  height: 42vh;
+  margin: 0 auto;
+  border-radius: 3%;
+}
+.mobileNav .line {
+  height: 2px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+}
+.mobileNav button {
+  width: 70%;
+}
+
+.hidden {
+  display: none;
+}
+
 .main {
   padding-bottom: 80px;
 }
@@ -128,7 +155,7 @@ li {
 .info-container .API-section #shortLinkList .link-color {
   color: hsl(180deg, 66%, 49%);
 }
-.info-container .API-section #shortLinkList .button {
+.info-container .API-section #shortLinkList .buttonStyle {
   background-color: hsl(180deg, 66%, 49%);
   color: white;
   border: none;

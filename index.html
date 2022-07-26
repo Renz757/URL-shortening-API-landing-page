@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <nav class="container p-5 mb-5">
+    <nav class="container p-5">
       <div class="row align-items-center ms-auto">
         <div class="col-8">
           <div class="d-flex align-items-center">
@@ -39,6 +39,7 @@
             width="32"
             height="32"
             class="bi bi-list d-md-none hamburger"
+            id="hamburger"
             viewBox="0 0 16 16"
           >
             <path
@@ -48,20 +49,29 @@
           </svg>
 
           <ul class="d-none d-md-flex align-items-center justify-content-end">
-            <li class="login">
-              Login
-            </li>
+            <li class="login">Login</li>
             <button class="rounded-pill global-btn">Sign Up</button>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div id="mobileMenu" class="hidden mobileNav text-center flex-column justify-content-center d-md-none">
+      <ul>
+        <li class="my-3">Features</li>
+        <li class="m-4">Pricing</li>
+        <li class="m-4">Resoucres</li>
+      </ul>
+      <div class="line"></div>
+      <div>
+        <p class="login m-3">Login</p>
+        <button class="rounded-pill global-btn m-1">Sign Up</button>
+      </div>
+    </div>
+
     <section class="main">
       <div class="row">
-        <div class="col-md-1">
-
-        </div>
+        <div class="col-md-1"></div>
         <div class="col-12 col-md-5 order-md-1">
           <img
             class="header-img"
@@ -80,40 +90,41 @@
       </div>
     </section>
 
-
     <section class="info-container">
-
       <section class="API-section">
         <div class="API">
           <div class="API-Box d-flex flex-column flex-md-row rounded">
-            <input class="rounded flex-md-grow-1" id="api-input" type="text" placeholder="Shorten a link here...">
+            <input
+              class="rounded flex-md-grow-1"
+              id="api-input"
+              type="text"
+              placeholder="Shorten a link here..."
+            />
             <button class="rounded" id="api-button">Shorten It!</button>
           </div>
-  
-        <ul id="shortLinkList">
-  
-        </ul>
-          
+
+          <ul id="shortLinkList"></ul>
         </div>
       </section>
 
-      <div class="info">      
+      <div class="info">
         <div class="row">
           <div class="col-12 info-header pt-5 mt-3 text-center">
             <h2 class="sub-header">Advanced Statistics</h2>
             <p class="text">
-              Track how your links are performing across the web with our advanced
-              statistics dashboard.
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
             </p>
           </div>
         </div>
 
-         
-       
-        <div class="container box-container d-flex flex-column flex-md-row align-items-center">
-
+        <div
+          class="container box-container d-flex flex-column flex-md-row align-items-center"
+        >
           <div class="text-center box align-self-md-start">
-            <div class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4">
+            <div
+              class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4"
+            >
               <img
                 class="circle-img"
                 src="images/icon-brand-recognition.svg"
@@ -123,16 +134,17 @@
             <h3 class="sub-header pt-5">Brand Recognition</h3>
             <p class="text mt-4 p-4">
               Boost your brand recognition with each click. Generic links don’t
-              mean a thing. Branded links help instil confidence in your content.
+              mean a thing. Branded links help instil confidence in your
+              content.
             </p>
           </div>
 
-          <div class="line py-4 py-md-0 px-0 px-md-3">
-      
-          </div>
-          
+          <div class="line py-4 py-md-0 px-0 px-md-3"></div>
+
           <div class="text-center box">
-            <div class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4">
+            <div
+              class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4"
+            >
               <img
                 class="circle-img"
                 src="images/icon-detailed-records.svg"
@@ -141,17 +153,18 @@
             </div>
             <h3 class="sub-header pt-5">Detailed Records</h3>
             <p class="text mt-4 p-4">
-              Gain insights into who is clicking your links. Knowing when and where
-              people engage with your content helps inform better decisions.
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
             </p>
           </div>
 
-          <div class="line py-4 py-md-0 px-0 px-md-3">
-      
-          </div>
+          <div class="line py-4 py-md-0 px-0 px-md-3"></div>
 
           <div class="text-center box align-self-md-end">
-            <div class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4">
+            <div
+              class="circle d-flex justify-content-center justify-content-md-start m-0 mx-md-4"
+            >
               <img
                 class="circle-img"
                 src="images/icon-fully-customizable.svg"
@@ -160,14 +173,11 @@
             </div>
             <h3 class="sub-header pt-5">Fully Customizable</h3>
             <p class="text mt-4 p-4">
-              Improve brand awareness and content discoverability through customizable
-              links, supercharging audience engagement.
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
             </p>
           </div>
         </div>
-        
-       
-
       </div>
     </section>
 
@@ -211,29 +221,42 @@
         <div class="social-links col-md-3">
           <ul class="d-flex justify-content-center">
             <li>
-              <img class="social-icon" src="images/icon-facebook.svg" alt="icon-facebook">
+              <img
+                class="social-icon"
+                src="images/icon-facebook.svg"
+                alt="icon-facebook"
+              />
             </li>
             <li>
-              <img class="social-icon" src="images/icon-twitter.svg" alt="icon-twitter">
+              <img
+                class="social-icon"
+                src="images/icon-twitter.svg"
+                alt="icon-twitter"
+              />
             </li>
             <li>
-              <img class="social-icon" src="images/icon-pinterest.svg" alt="icon-pinterest">
+              <img
+                class="social-icon"
+                src="images/icon-pinterest.svg"
+                alt="icon-pinterest"
+              />
             </li>
             <li>
-              <img class="social-icon" src="images/icon-instagram.svg" alt="icon-instagram">
+              <img
+                class="social-icon"
+                src="images/icon-instagram.svg"
+                alt="icon-instagram"
+              />
             </li>
           </ul>
         </div>
       </div>
-
     </footer>
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-    <script src="script.js">
-      
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
