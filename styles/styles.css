@@ -10267,11 +10267,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html, * {
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -10345,9 +10346,10 @@ li {
   right: 0;
   z-index: 1;
   width: 75%;
-  height: 42vh;
+  height: 44vh;
   margin: 0 auto;
   border-radius: 3%;
+  padding: 30px;
 }
 .mobileNav .line {
   height: 2px;
